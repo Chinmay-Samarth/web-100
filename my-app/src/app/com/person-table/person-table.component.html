@@ -1,0 +1,60 @@
+<h1 class="my-2">{{person.name}}</h1>
+
+<br><br>
+
+<form>
+    <input matInput #text (keyup)="applyFilter(text.value)" placeholder ='Filter' class="form-control w-25"> 
+    <br>
+    <input type="button"  value="+ Add" class="btn btn-primary" (click)="onsubmit()">
+</form>
+<br>
+<mat-progress-spinner mode="determinate" value="{{count}}" color="warn"></mat-progress-spinner>
+<br><br>
+
+
+<table mat-table [dataSource]="dataSource" matSort 
+    class="mat-elevation-z8">
+
+<!-- Position Column -->
+<ng-container matColumnDef="no" >
+    <th mat-header-cell mat-sort-header *matHeaderCellDef>
+        No
+    </th>
+    <td mat-cell *matCellDef="let element"> {{element.no}} </td>
+</ng-container>
+
+<!-- Name Column -->
+<ng-container matColumnDef="amount">
+    <th mat-header-cell *matHeaderCellDef>
+        Amount
+    </th>
+    <td mat-cell *matCellDef="let element"> {{element.am}} </td>
+</ng-container>
+
+<!-- Weight Column -->
+<ng-container matColumnDef="submit date">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Submit Date
+    </th>
+    <td mat-cell *matCellDef="let element"> {{element.submit_date}} </td>
+</ng-container>
+
+<!-- Symbol Column -->
+<ng-container matColumnDef="transaction id">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Transaction ID
+    </th>
+    <td mat-cell *matCellDef="let element"> {{element.transaction_id}} </td>
+</ng-container>
+
+<<ng-container matColumnDef="btn">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element" class="con">
+        <input matInput id="butn" class="btn btn-danger mx-2 p-2 my-1 d-inline-block" value="Delete" (click)="ondelete(element.transaction_id)">
+        <input matInput id="butn" class="btn btn-warning mx-2 p-2 my-1 d-inline-block" value="Edit" (click)="onEdit(element.transaction_id, element.submit_date)">
+    </td>
+</ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" ><tr>
+</table>

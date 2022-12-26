@@ -1,0 +1,7 @@
+<form>
+    <div class="form-group m-3">
+    <label for="exampleInputEmail1">Date</label>
+    <input type="text" #name class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Date">
+    </div>
+    <button type="submit" class="btn btn-primary m-3" (click)="onupdate(name.value)" >Submit</button>
+</form>

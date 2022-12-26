@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group m-3">
+    <label for="exampleInputEmail1">Person Name</label>
+    <input type="text" #name class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+    </div>
+    <div class="form-group m-3">
+    <label for="exampleInputPassword1">Phone number</label>
+    <input type="number" #phone class="form-control" id="exampleInputPassword1" placeholder="Phone number">
+    </div>
+    <div class="form-group m-3">
+        <label for="exampleInputPassword1">Amount</label>
+        <input type="number" #amount class="form-control" id="exampleInputPassword1" placeholder="Amount">
+        </div>
+    <button type="submit" class="btn btn-primary m-3" (click)="onsubmit(name.value,phone.value,amount.value)">Submit</button>
+</form>

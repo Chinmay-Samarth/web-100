@@ -1,0 +1,10 @@
+table{
+    width: calc(100vh - 25%);
+}
+#butn{
+    display: inline-block;
+    flex: auto;
+}
+.con{
+    display: flex;
+}

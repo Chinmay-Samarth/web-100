@@ -1,0 +1,7 @@
+<form>
+    <div class="form-group m-3">
+    <mat-label for="exampleInputEmail1">Person Name</mat-label>
+    <input  #name class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+    </div>
+    <button type="submit" class="btn btn-primary m-3" (click)="onsubmit(name.value)">Submit</button>
+</form>
