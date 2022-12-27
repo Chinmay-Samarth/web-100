@@ -17,7 +17,7 @@ export class AddTransactionComponent {
   ){}
 
   gotoTransactions = new EventEmitter()
-  serverUrl:string = 'https://fastapi-server-chinmay-web-100.onrender.com/' 
+  serverUrl:string = 'https://fastapi-server-chinmay-chinmay-samarth.vercel.app/' 
 
   onsubmit(name:string){
     this.http.post(this.serverUrl + 'transact/' + name,{})

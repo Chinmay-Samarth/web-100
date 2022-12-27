@@ -18,7 +18,7 @@ export class TransactionComponent implements OnInit {
   dataSource:any;
   temp:any = []
   displayedColumns:string[] = ['transaction id','submit date','amount','name','phone','btn']
-  serverUrl:string = 'https://fastapi-server-chinmay-web-100.onrender.com/'
+  serverUrl:string = 'https://fastapi-server-chinmay-chinmay-samarth.vercel.app/'
 
   constructor(
     private http:HttpClient,

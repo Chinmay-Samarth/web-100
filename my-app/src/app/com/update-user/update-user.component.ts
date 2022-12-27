@@ -13,7 +13,7 @@ export class UpdateUserComponent {
   person_id:number = 0;
   gotoPerson = new EventEmitter()
 
-  serverUrl:string = 'https://fastapi-server-chinmay-web-100.onrender.com/'
+  serverUrl:string = 'https://fastapi-server-chinmay-chinmay-samarth.vercel.app/'
 
   constructor(
     private http:HttpClient,

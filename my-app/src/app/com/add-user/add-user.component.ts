@@ -19,7 +19,7 @@ export class AddUserComponent {
     private per:PersonComponent,
     private snackbar:MatSnackBar
   ){}
-  serverUrl:string = 'https://fastapi-server-chinmay-web-100.onrender.com/';
+  serverUrl:string = 'https://fastapi-server-chinmay-chinmay-samarth.vercel.app/';
   gotoPerson = new EventEmitter();
 
   onsubmit(name:string,phone:any,amount:any){

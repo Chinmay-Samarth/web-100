@@ -21,7 +21,7 @@ export class PersonTableComponent implements OnInit{
   displayedColumns : string[] = ['no','amount','submit date','transaction id','btn']
   dataSource:any;
   temp:any
-  serverUrl:string ='https://fastapi-server-chinmay-web-100.onrender.com/'
+  serverUrl:string ='https://fastapi-server-chinmay-chinmay-samarth.vercel.app/'
   count:number = 0;
   temp2:any;
   

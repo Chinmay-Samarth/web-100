@@ -17,11 +17,11 @@ export class SignInComponent implements OnInit{
   sign_password:number | any = '' 
 
   ngOnInit(){
-    this.http.get('https://fastapi-server-chinmay-web-100.onrender.com/')
+    this.http.get('https://fastapi-server-chinmay-chinmay-samarth.vercel.app/')
   }
 
   onsign(){
-    this.http.get('https://fastapi-server-chinmay-web-100.onrender.com/password')
+    this.http.get('https://fastapi-server-chinmay-chinmay-samarth.vercel.app/password')
     .subscribe((res)=>{
       if(this.sign_password == res){
 

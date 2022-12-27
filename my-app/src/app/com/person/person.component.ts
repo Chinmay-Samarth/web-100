@@ -26,7 +26,7 @@ export class PersonComponent implements OnInit{
   displayedColumns:string[] = ['id','name','phone','amount','del'];
   dataSource:MatTableDataSource<any> | any;
   temp:any = []
-  serverUrl:string='https://fastapi-server-chinmay-web-100.onrender.com/';
+  serverUrl:string='https://fastapi-server-chinmay-chinmay-samarth.vercel.app/';
   person_id:number | any
 
   ngOnInit(){

@@ -17,7 +17,7 @@ constructor(
   private dialref: MatDialogRef<PersonTableComponent>,
   private snackbar:MatSnackBar
 ){}
-  serverUrl:string = 'https://fastapi-server-chinmay-web-100.onrender.com/'
+  serverUrl:string = 'https://fastapi-server-chinmay-chinmay-samarth.vercel.app/'
 
   
   onupdate(date:string){
