@@ -21,7 +21,10 @@ import { UpdateUserComponent } from './com/update-user/update-user.component';
 import { UpdatePersonTransactionComponent } from './com/update-person-transaction/update-person-transaction.component'
 import { MatInputModule } from '@angular/material/input'
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
-import { MatSnackBarModule } from '@angular/material/snack-bar'
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { TransactionDatesComponent } from './com/transaction-dates/transaction-dates.component'
+import { MatDatepickerModule } from '@angular/material/datepicker'
+import { MatNativeDateModule } from '@angular/material/core'
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'
     AddUserComponent,
     AddTransactionComponent,
     UpdateUserComponent,
-    UpdatePersonTransactionComponent
+    UpdatePersonTransactionComponent,
+    TransactionDatesComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +53,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'
     MatDialogModule,
     MatInputModule,
     MatProgressSpinnerModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
