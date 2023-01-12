@@ -1,4 +1,7 @@
 <h1 class="my-2">{{person.name}}</h1>
+<br>
+<h4 class="p-2 ">Number of Transaction left : <b class="m-0 bg-light rounded p-2 text-danger ">{{100 - count}}</b></h4>
+<h4 class="p-2 ">Number of Transaction given : <b class="m-0 bg-light rounded p-2 text-danger ">{{count}}</b></h4>
 
 <br><br>
 
@@ -9,6 +12,7 @@
 </form>
 <br>
 <mat-progress-spinner mode="determinate" value="{{count}}" color="warn"></mat-progress-spinner>
+<br>
 <br><br>
 
 
