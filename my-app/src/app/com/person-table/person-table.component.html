@@ -8,7 +8,7 @@
 <form>
     <input matInput #text (keyup)="applyFilter(text.value)" placeholder ='Filter' class="form-control w-25"> 
     <br>
-    <input type="button"  value="+ Add" class="btn btn-primary" (click)="onsubmit()">
+    <input type="button"  value="+ Add Transaction" class="btn btn-primary" (click)="onsubmit()">
 </form>
 <br>
 <mat-progress-spinner mode="determinate" value="{{count}}" color="warn"></mat-progress-spinner>
